@@ -1,0 +1,460 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--to cover almost all characters and symbols in the world-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--meta tag allow web authors to choose what version of internet explorer page should be rendered, Edge mode tells Internet Explorer to display content in the highest mode available-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For making responsive webpage and view port is user visible area of web page The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.-->
+    <title>Shop</title>
+    <!--fontawesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--bootstrap css link this is done by searching stackpath bootstrap where we get css link for nav bar to shift right-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="STYLE/style.css">
+    <style>
+        .product img{
+            width:100%;
+            height: auto:
+            box-sizing: border-box;
+            object-fit:cover;
+        }
+        body > nav:nth-child(3) > ul > li.page-item.active > a{
+            background-color:black;
+        }
+        body > nav:nth-child(3) > ul > li:nth-child(n):hover a{
+            background-color:coral;
+            color:white;
+        }
+        .pagination a{
+            color:black;
+        }
+    </style>
+
+</head>
+<body>
+     <!--Navigation Bar boaster class fixed top-->
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top"> <!--py-5 means padding from top and bottom 3-->
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo1.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i id="bar" class="fa fa-bars"></i></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto"> <!--aml-margin for left auto-->
+        
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact-Us</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa fa-search"></i>
+              <i class="fa fa-shopping-bag"></i>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+    
+  <!--end of navigation bar-->
+
+    <section id="featured" class="mt-5 py-5">
+        <div class="container mt-5 py-5">
+          <h2>
+            Our Featured
+          </h2>
+          <hr>
+          <p>Here you can check out our new products with fair price on rymo.</p>
+        </div>
+        <!--mx-auto container-fluid remove scroll and container fluid for space-->
+        <div class="row mx-auto container">
+          <div onclick="window.location.href='sproduct.html';" class="products text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/shop/1.jpg">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Sport Boots</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+    
+          <div class="products text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/shop/2.jpg">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Sport Boots</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+    
+          <div class="products text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/shop/3.jpg">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Sport Boots</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+    
+          <div class="products text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="img/shop/4.jpg">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Sport Boots</h5>
+            <h4 class="p-price">$92.00</h4>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          <div class="row mx-auto container">
+            <div class="products text-center col-lg-3 col-md-4 col-12">
+              <img class="img-fluid mb-3" src="img/shop/5.jpg">
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <h5 class="p-name">Sport Boots</h5>
+              <h4 class="p-price">$92.00</h4>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+      
+            <div class="products text-center col-lg-3 col-md-4 col-12">
+              <img class="img-fluid mb-3" src="img/shop/6.jpg">
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <h5 class="p-name">Sport Boots</h5>
+              <h4 class="p-price">$92.00</h4>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+      
+            <div class="products text-center col-lg-3 col-md-4 col-12">
+              <img class="img-fluid mb-3" src="img/shop/7.jpg">
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <h5 class="p-name">Sport Boots</h5>
+              <h4 class="p-price">$92.00</h4>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+      
+            <div class="products text-center col-lg-3 col-md-4 col-12">
+              <img class="img-fluid mb-3" src="img/shop/8.jpg">
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <h5 class="p-name">Sport Boots</h5>
+              <h4 class="p-price">$92.00</h4>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+            <div class="row mx-auto container">
+                <div class="products text-center col-lg-3 col-md-4 col-12">
+                  <img class="img-fluid mb-3" src="img/shop/9.jpg">
+                  <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Sport Boots</h5>
+                  <h4 class="p-price">$92.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+          
+                <div class="products text-center col-lg-3 col-md-4 col-12">
+                  <img class="img-fluid mb-3" src="img/shop/10.jpg">
+                  <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Sport Boots</h5>
+                  <h4 class="p-price">$92.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+          
+                <div class="products text-center col-lg-3 col-md-4 col-12">
+                  <img class="img-fluid mb-3" src="img/shop/11.jpg">
+                  <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Sport Boots</h5>
+                  <h4 class="p-price">$92.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+          
+                <div class="products text-center col-lg-3 col-md-4 col-12">
+                  <img class="img-fluid mb-3" src="img/shop/12.jpg">
+                  <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                  </div>
+                  <h5 class="p-name">Sport Boots</h5>
+                  <h4 class="p-price">$92.00</h4>
+                  <button class="buy-btn">Buy Now</button>
+                </div>
+                <div class="row mx-auto container">
+                    <div class="products text-center col-lg-3 col-md-4 col-12">
+                      <img class="img-fluid mb-3" src="img/shop/13.jpg">
+                      <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <h5 class="p-name">Sport Boots</h5>
+                      <h4 class="p-price">$92.00</h4>
+                      <button class="buy-btn">Buy Now</button>
+                    </div>
+              
+                    <div class="products text-center col-lg-3 col-md-4 col-12">
+                      <img class="img-fluid mb-3" src="img/shop/14.jpg">
+                      <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <h5 class="p-name">Sport Boots</h5>
+                      <h4 class="p-price">$92.00</h4>
+                      <button class="buy-btn">Buy Now</button>
+                    </div>
+              
+                    <div class="products text-center col-lg-3 col-md-4 col-12">
+                      <img class="img-fluid mb-3" src="img/shop/15.jpg">
+                      <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <h5 class="p-name">Sport Boots</h5>
+                      <h4 class="p-price">$92.00</h4>
+                      <button class="buy-btn">Buy Now</button>
+                    </div>
+              
+                    <div class="products text-center col-lg-3 col-md-4 col-12">
+                      <img class="img-fluid mb-3" src="img/shop/16.jpg">
+                      <div class="star">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <h5 class="p-name">Sport Boots</h5>
+                      <h4 class="p-price">$92.00</h4>
+                      <button class="buy-btn">Buy Now</button>
+                    </div>
+
+                    <div class="row mx-auto container">
+                        <div class="products text-center col-lg-3 col-md-4 col-12">
+                          <img class="img-fluid mb-3" src="img/shop/17.jpg">
+                          <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <h5 class="p-name">Sport Boots</h5>
+                          <h4 class="p-price">$92.00</h4>
+                          <button class="buy-btn">Buy Now</button>
+                        </div>
+                  
+                        <div class="products text-center col-lg-3 col-md-4 col-12">
+                          <img class="img-fluid mb-3" src="img/shop/18.jpg">
+                          <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <h5 class="p-name">Sport Boots</h5>
+                          <h4 class="p-price">$92.00</h4>
+                          <button class="buy-btn">Buy Now</button>
+                        </div>
+                  
+                        <div class="products text-center col-lg-3 col-md-4 col-12">
+                          <img class="img-fluid mb-3" src="img/shop/19.jpg">
+                          <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <h5 class="p-name">Sport Boots</h5>
+                          <h4 class="p-price">$92.00</h4>
+                          <button class="buy-btn">Buy Now</button>
+                        </div>
+                  
+                        <div class="products text-center col-lg-3 col-md-4 col-12">
+                          <img class="img-fluid mb-3" src="img/shop/20.jpg">
+                          <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                          </div>
+                          <h5 class="p-name">Sport Boots</h5>
+                          <h4 class="p-price">$92.00</h4>
+                          <button class="buy-btn">Buy Now</button>
+                        </div>
+        </div>
+    </section>
+
+<!--adding pagination through bootstrap-->
+    <nav aria-label="...">
+        <ul class="pagination mt-5">
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">Previous</a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item ">
+            <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+        </li>
+        </ul>
+    </nav>
+      <!--start of footer section-->
+  <footer class="mt-5 py-5">
+    <div class="row container mx-auto pt-5">
+      <div class="footer-one col-lg-3 col-md-6 col-12">
+        <img src="img/logo2.png">
+        <p class="pt-3">Lorem Ipsum is simply dummy text of the printing 
+          and typesetting industry. Lorem Ipsum has been the 
+          industry's standard dummy text ever since the 1500s,
+           when an unknown printer took a galley of type and 
+           scrambled it to make a type specimen book. It has 
+           survived not only five centuries, but also the leap 
+           into electronic typesetting, remaining essentially 
+           unchanged.</p>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+        <h5 pb-2>Featured</h5>
+        <ul class="text-uppercase list-unstyled">
+          <li><a href="#">men</a></li>
+          <li><a href="#">women</a></li>
+          <li><a href="#">boys</a></li>
+          <li><a href="#">girls</a></li>
+          <li><a href="#">new arrivals</a></li>
+          <li><a href="#">shoes</a></li>
+          <li><a href="#">clothes</a></li>
+        </ul>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-12">
+        <h5 pb-2>Contact Us</h5>
+        <div>
+          <h6 class="text-uppercase">Address</h6>
+          <p>123 STREET NAME, CITY, US</p>
+        </div>
+        <div>
+          <h6 class="text-uppercase">Phone</h6>
+          <p>123 456-7680</p>
+        </div>
+        <div>
+          <h6 class="text-uppercase">email</h6>
+          <p>mall@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+        <h5 class="pb-3">Instagrams</h5>
+        <div class="row">
+          <img class="img-fluid w-25 h-100" src="img/insta/1.jpg">
+          <img class="img-fluid w-25 h-100" src="img/insta/2.jpg">
+          <img class="img-fluid w-25 h-100" src="img/insta/3.jpg">
+          <img class="img-fluid w-25 h-100" src="img/insta/4.jpg">
+          <img class="img-fluid w-25 h-100" src="img/insta/5.jpg">
+
+        </div>
+      </div>
+    </div>
+    <div class="copyright mt-5">
+      <div class="row container mx-auto">
+        <div class="col-lg-3 col-md-6 col-12 mb-4">
+          <img src="img/payment.png">
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-2"> <!--text-nowrap for online -->
+          <p>rymo eCommerce &copy 2021. All Rights Reserved</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--end of footer section-->
+
+
+<!--bootstrap jquery file link If you don't want to download and host jQuery yourself, you can include it from a CDN (Content Delivery Network).-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>

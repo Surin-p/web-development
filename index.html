@@ -1,0 +1,485 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--to cover almost all characters and symbols in the world-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--meta tag allow web authors to choose what version of internet explorer page should be rendered, Edge mode tells Internet Explorer to display content in the highest mode available-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- For making responsive webpage and view port is user visible area of web page The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.-->
+    <title>ECommerce</title>
+    <!--fontawesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--bootstrap css link this is done by searching stackpath bootstrap where we get css link for nav bar to shift right-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="STYLE/style.css">
+  
+
+</head>
+<body>
+  <!--Navigation Bar boaster class fixed top-->
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top"> <!--py-5 means padding from top and bottom 3-->
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo1.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i id="bar" class="fa fa-bars"></i></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto"> <!--aml-margin for left auto-->
+        
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact-Us</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa fa-search"></i>
+              <i class="fa fa-shopping-bag"></i>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+    
+  <!--end of navigation bar-->
+
+  <!--starting of home section-->
+  <section id="home">
+    <div class="container">
+      <h5>NEW ARRAIVALS</h5>
+      <h1><span>BEST PRICE </span>THIS YEAR</h1>
+      <p>Give your feet the comfort <br>everytime you move</p>
+      <button>BUY NOW</button>
+    </div>
+  </section>
+  <!--end of home section-->
+
+  <!--starting of brand section-->
+  <section id="brand" class="container">
+    <div class="row m-0 py-5">
+      <!--this make our class responsive and follow 12 standard grid columns which means
+      bootstraps divide website into different columns to make it responsive 
+      we can declare some column to specific path, column take 2 in large screen 4 in medium screen and 6 in small screen-->
+      <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/brand/1.png">
+      <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/brand/2.png">
+      <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/brand/3.png">
+      <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/brand/4.png">
+      <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/brand/5.png">
+      <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/brand/6.png">
+    </div>
+  </section>
+  <!--end of brand section-->
+
+  <!--starting of new section-->
+  <section id="new" class="w-100">
+    <div class="row m-0 p-0">
+      <div class="one col-lg-4 col-md-12 col-12 p-0">
+        <img class="img-fluid" src="img/new/1.jpg">
+        <div class="details">
+          <h2>Extreme Rare Sneakers</h2>
+          <button class="uppercase">shop now</button>
+        </div>
+      </div>
+      <div class="one col-lg-4 col-md-12 col-12 p-0">
+        <img class="img-fluid" src="img/new/5.jpg">
+        <div class="details">
+          <h2>Awesome Blank Outfit</h2>
+          <button class="uppercase">shop now</button>
+        </div>
+      </div>
+      <div class="one col-lg-4 col-md-12 col-12 p-0">
+        <img class="img-fluid" src="img/new/3.jpg">
+        <div class="details">
+          <h2>Sportwear Up to 50% off</h2>
+          <button class="uppercase">shop now</button>
+        </div>
+      </div>
+      
+    </div>
+
+  </section>
+  <!--end of new section-->
+
+
+  <!--starting of featured section-->
+  <section id="featured" class="mt-5 py-5">
+    <div class="container text-center mt-5 py-5">
+      <h3>
+        Our Featured
+      </h3>
+      <hr class="mx-auto"> <!--horizontal line-->
+      <p>Here you can check out our new products with fair price on rymo.</p>
+    </div>
+    <!--mx-auto container-fluid remove scroll and container fluid for space-->
+    <div class="row mx-auto container-fluid">
+      <div class="products text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="img/featured/1.jpg">
+        <div class="star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Sport Boots</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+
+      <div class="products text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="img/featured/2.jpg">
+        <div class="star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Sport Boots</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+
+      <div class="products text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="img/featured/3.jpg">
+        <div class="star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Sport Boots</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+
+      <div class="products text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="img/featured/4.jpg">
+        <div class="star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Sport Boots</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+  </section>
+  <!--end of featured section-->
+
+
+  <!--adding paradox background with banner section-->
+  <section id="banner" class="my-5 py-5">
+      <div class="container">
+        <h4>MID SEASON'S SALE</h4>
+        <h1>Autumn Collection<br>UP TO 20% OFF</h1>
+        <button class="text-uppercase">Shop Now</button>
+      </div>
+  </section>
+  <!--end of banner section-->
+
+  <!--starting of clothes section-->
+  <section id="clothes" class="my-5">
+    <div class="container text-center mt-5 py-5">
+      <h3>
+        Dresses & Jumpsuits
+      </h3>
+      <hr class="mx-auto"> <!--horizontal line-->
+      <p>Here you can check out our new products with fair price on rymo.</p>
+    </div>
+    <!--mx-auto container-fluid remove scroll and container fluid for space-->
+    <div class="row mx-auto container-fluid">
+      <div class="products text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="img/clothes/1.jpg">
+        <div class="star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Sport Boots</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+
+      <div class="products text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="img/clothes/2.jpg">
+        <div class="star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Sport Boots</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+
+      <div class="products text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="img/clothes/3.jpg">
+        <div class="star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Sport Boots</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+
+      <div class="products text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="img/clothes/3.jpg">
+        <div class="star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Sport Boots</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+  </section>
+  <!--end of clothes section-->
+  
+   <!--starting of watches section-->
+   <section id="watches" class="my-5">
+    <div class="container text-center mt-5 py-5">
+      <h3>
+        BEST WATCHES
+      </h3>
+      <hr class="mx-auto"> <!--horizontal line-->
+      <p>Here you can check out our new products with fair price on rymo.</p>
+    </div>
+    <!--mx-auto container-fluid remove scroll and container fluid for space-->
+    <div class="row mx-auto container-fluid">
+      <div class="products text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="img/watches/1.jpg">
+        <div class="star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Sport Boots</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+
+      <div class="products text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="img/watches/2.jpg">
+        <div class="star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Sport Boots</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+
+      <div class="products text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="img/watches/3.jpg">
+        <div class="star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Sport Boots</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+
+      <div class="products text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="img/watches/4.jpg">
+        <div class="star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Sport Boots</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+  </section>
+  <!--end of watches section-->
+    
+   <!--starting of shoes section-->
+   <section id="shoes" class="my-5 pb-5">
+    <div class="container text-center mt-5 py-5">
+      <h3>
+        RUNNING SHOES
+      </h3>
+      <hr class="mx-auto"> <!--horizontal line-->
+      <p>Here you can check out our new products with fair price on rymo.</p>
+    </div>
+    <!--mx-auto container-fluid remove scroll and container fluid for space-->
+    <div class="row mx-auto container-fluid">
+      <div class="products text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="img/shoes/1.jpg">
+        <div class="star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Sport Boots</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+
+      <div class="products text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="img/shoes/2.jpg">
+        <div class="star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Sport Boots</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+
+      <div class="products text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="img/shoes/3.jpg">
+        <div class="star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Sport Boots</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+
+      <div class="products text-center col-lg-3 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="img/shoes/4.jpg">
+        <div class="star">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <h5 class="p-name">Sport Boots</h5>
+        <h4 class="p-price">$92.00</h4>
+        <button class="buy-btn">Buy Now</button>
+      </div>
+    </div>
+  </section>
+  <!--end of shoes section-->
+
+  <!--start of footer section-->
+  <footer class="mt-5 py-5">
+    <div class="row container mx-auto pt-5">
+      <div class="footer-one col-lg-3 col-md-6 col-12">
+        <img src="img/logo2.png">
+        <p class="pt-3">Lorem Ipsum is simply dummy text of the printing 
+          and typesetting industry. Lorem Ipsum has been the 
+          industry's standard dummy text ever since the 1500s,
+           when an unknown printer took a galley of type and 
+           scrambled it to make a type specimen book. It has 
+           survived not only five centuries, but also the leap 
+           into electronic typesetting, remaining essentially 
+           unchanged.</p>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+        <h5 pb-2>Featured</h5>
+        <ul class="text-uppercase list-unstyled">
+          <li><a href="#">men</a></li>
+          <li><a href="#">women</a></li>
+          <li><a href="#">boys</a></li>
+          <li><a href="#">girls</a></li>
+          <li><a href="#">new arrivals</a></li>
+          <li><a href="#">shoes</a></li>
+          <li><a href="#">clothes</a></li>
+        </ul>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-12">
+        <h5 pb-2>Contact Us</h5>
+        <div>
+          <h6 class="text-uppercase">Address</h6>
+          <p>123 STREET NAME, CITY, US</p>
+        </div>
+        <div>
+          <h6 class="text-uppercase">Phone</h6>
+          <p>123 456-7680</p>
+        </div>
+        <div>
+          <h6 class="text-uppercase">email</h6>
+          <p>mall@gmail.com</p>
+        </div>
+      </div>
+      <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+        <h5 class="pb-3">Instagrams</h5>
+        <div class="row">
+          <img class="img-fluid w-25 h-100" src="img/insta/1.jpg">
+          <img class="img-fluid w-25 h-100" src="img/insta/2.jpg">
+          <img class="img-fluid w-25 h-100" src="img/insta/3.jpg">
+          <img class="img-fluid w-25 h-100" src="img/insta/4.jpg">
+          <img class="img-fluid w-25 h-100" src="img/insta/5.jpg">
+
+        </div>
+      </div>
+    </div>
+    <div class="copyright mt-5">
+      <div class="row container mx-auto">
+        <div class="col-lg-3 col-md-6 col-12 mb-4">
+          <img src="img/payment.png">
+        </div>
+        <div class="col-lg-4 col-md-6 col-12 mb-2"> <!--text-nowrap for online -->
+          <p>rymo eCommerce &copy 2021. All Rights Reserved</p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--end of footer section-->
+
+
+
+
+  <!--bootstrap jquery file link If you don't want to download and host jQuery yourself, you can include it from a CDN (Content Delivery Network).-->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>
